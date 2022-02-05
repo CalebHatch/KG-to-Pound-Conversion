@@ -26,7 +26,7 @@ public class Main {
                 lb = (ar[i] * 2.2);
 
                 BigDecimal bd = new BigDecimal(lb);
-                bd = bd.round(new MathContext(2));
+                bd = bd.round(new MathContext(3));
                 double lbRounded = bd.doubleValue();
 
 
