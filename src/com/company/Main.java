@@ -13,13 +13,13 @@ public class Main {
 
         public static void main(String[] args) {
 
-            // multiply 1 by 2.2 and put it in a for loop
-
-            int ar[] = {1, 3, 5, 7, 9, 11, 13, 15};
+            int[] ar = {1, 3, 5, 7, 9, 11, 13, 15};
             int i, kg;
             double lb;
 
-            System.out.printf("%-10s %10s", "Kilograms", "Pounds\n");
+            // Prints header format for table
+            System.out.printf("%-10s %10s", "Kilograms", "Pounds\n"); // Print header format for table
+
             System.out.println("---------     ------\s");
 
             for (i = 0; i < ar.length; i++) {
@@ -27,7 +27,7 @@ public class Main {
                 lb = (ar[i] * 2.2);
 
                 BigDecimal bd = new BigDecimal(lb);
-                bd = bd.round(new MathContext(3));
+                bd = bd.round(new MathContext(3)); // Round pounds to tenths place
                 double lbRounded = bd.doubleValue();
 
 
