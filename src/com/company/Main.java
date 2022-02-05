@@ -1,4 +1,5 @@
-/** Week 5, Program 5.1
+/** Week 5, Assignment 5
+ * Program 5.1 - KG to Pound Conversion
  * by Caleb Hatch
  */
 
